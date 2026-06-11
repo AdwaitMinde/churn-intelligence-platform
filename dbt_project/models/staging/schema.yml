@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_events
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+      - name: event_time
+        tests:
+          - not_null
+      - name: event_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['view', 'cart', 'purchase']
+
+  - name: customer_features
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      - name: churned
+        tests:
+          - not_null

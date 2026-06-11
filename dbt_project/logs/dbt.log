@@ -1,0 +1,1593 @@
+[0m23:46:01.685782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025696B3D7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025697FB8F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002569AA08D10>]}
+
+
+============================== 23:46:01.693406 | e8ccb79b-1d51-4460-beb6-170b08dd9a13 ==============================
+[0m23:46:01.693406 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:46:01.694914 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\minde\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:46:01.724989 [info ] [MainThread]: dbt version: 1.11.11
+[0m23:46:01.724989 [info ] [MainThread]: python version: 3.12.10
+[0m23:46:01.724989 [info ] [MainThread]: python path: C:\churn-intelligence-platform\.venv\Scripts\python.exe
+[0m23:46:01.734657 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:46:01.735167 [info ] [MainThread]: Using profiles dir at C:\Users\minde\.dbt
+[0m23:46:01.736375 [info ] [MainThread]: Using profiles.yml file at C:\Users\minde\.dbt\profiles.yml
+[0m23:46:01.737384 [info ] [MainThread]: Using dbt_project.yml file at C:\churn-intelligence-platform\dbt_project\dbt_project.yml
+[0m23:46:01.737723 [info ] [MainThread]: Configuration:
+[0m23:46:01.737723 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m23:46:01.737723 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:46:01.737723 [info ] [MainThread]: Required dependencies:
+[0m23:46:01.737723 [debug] [MainThread]: Executing "git --help"
+[0m23:46:01.795275 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:46:01.795275 [debug] [MainThread]: STDERR: "b''"
+[0m23:46:01.795275 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:46:01.795275 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m23:46:01.801254 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:46:01.801254 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\minde\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:46:01.802267 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\churn-intelligence-platform\dbt_project\dbt_project.yml> not found
+
+[0m23:46:01.803246 [debug] [MainThread]: Command `dbt debug` failed at 23:46:01.803246 after 0.25 seconds
+[0m23:46:01.803246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256973A8530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002569C86C5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002569AAF28D0>]}
+[0m23:46:01.803246 [debug] [MainThread]: Flushing usage events
+[0m23:46:02.384848 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:46:51.109935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8BB2FD7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8BD5FD1F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8BD5FD190>]}
+
+
+============================== 23:46:51.116301 | dfd41ce9-9263-4a66-93bd-78d4651d73b7 ==============================
+[0m23:46:51.116301 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:46:51.116676 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\minde\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:46:51.131324 [info ] [MainThread]: dbt version: 1.11.11
+[0m23:46:51.131324 [info ] [MainThread]: python version: 3.12.10
+[0m23:46:51.132280 [info ] [MainThread]: python path: C:\churn-intelligence-platform\.venv\Scripts\python.exe
+[0m23:46:51.133296 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:46:51.134274 [info ] [MainThread]: Using profiles dir at C:\Users\minde\.dbt
+[0m23:46:51.134274 [info ] [MainThread]: Using profiles.yml file at C:\Users\minde\.dbt\profiles.yml
+[0m23:46:51.135374 [info ] [MainThread]: Using dbt_project.yml file at C:\churn-intelligence-platform\dbt_project\dbt_project.yml
+[0m23:46:51.135374 [info ] [MainThread]: Configuration:
+[0m23:46:51.136831 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m23:46:51.136831 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:46:51.137847 [info ] [MainThread]: Required dependencies:
+[0m23:46:51.138854 [debug] [MainThread]: Executing "git --help"
+[0m23:46:51.193363 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:46:51.194870 [debug] [MainThread]: STDERR: "b''"
+[0m23:46:51.194870 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:46:51.194870 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m23:46:51.195879 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:46:51.195879 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\minde\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:46:51.196877 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\churn-intelligence-platform\dbt_project\dbt_project.yml> not found
+
+[0m23:46:51.197889 [debug] [MainThread]: Command `dbt debug` failed at 23:46:51.197889 after 0.26 seconds
+[0m23:46:51.199309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8BFE3F9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8C1027BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8BFF9B860>]}
+[0m23:46:51.199880 [debug] [MainThread]: Flushing usage events
+[0m23:46:51.741672 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:49:34.516155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A17A2D2000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A178954EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A176B785F0>]}
+
+
+============================== 23:49:34.516155 | e1c205ef-51a0-4fd8-95c4-0347a7906761 ==============================
+[0m23:49:34.516155 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:49:34.516155 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\minde\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:49:34.535081 [info ] [MainThread]: dbt version: 1.11.11
+[0m23:49:34.536089 [info ] [MainThread]: python version: 3.12.10
+[0m23:49:34.537090 [info ] [MainThread]: python path: C:\churn-intelligence-platform\.venv\Scripts\python.exe
+[0m23:49:34.537090 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:49:37.565068 [info ] [MainThread]: Using profiles dir at C:\Users\minde\.dbt
+[0m23:49:37.565068 [info ] [MainThread]: Using profiles.yml file at C:\Users\minde\.dbt\profiles.yml
+[0m23:49:37.565068 [info ] [MainThread]: Using dbt_project.yml file at C:\churn-intelligence-platform\dbt_project\dbt_project.yml
+[0m23:49:37.565068 [info ] [MainThread]: adapter type: bigquery
+[0m23:49:37.565068 [info ] [MainThread]: adapter version: 1.11.1
+[0m23:49:37.565068 [info ] [MainThread]: Configuration:
+[0m23:49:37.565068 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:49:37.565068 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:49:37.565068 [info ] [MainThread]: Required dependencies:
+[0m23:49:37.565068 [debug] [MainThread]: Executing "git --help"
+[0m23:49:37.619355 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:49:37.619355 [debug] [MainThread]: STDERR: "b''"
+[0m23:49:37.620354 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:49:37.620354 [info ] [MainThread]: Connection:
+[0m23:49:37.621354 [info ] [MainThread]:   method: service-account
+[0m23:49:37.621354 [info ] [MainThread]:   database: my-project-mail-422110
+[0m23:49:37.621354 [info ] [MainThread]:   execution_project: my-project-mail-422110
+[0m23:49:37.622353 [info ] [MainThread]:   schema: ecommerce_marts
+[0m23:49:37.622353 [info ] [MainThread]:   location: US
+[0m23:49:37.622353 [info ] [MainThread]:   priority: None
+[0m23:49:37.623660 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m23:49:37.623660 [info ] [MainThread]:   impersonate_service_account: None
+[0m23:49:37.623660 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m23:49:37.624722 [info ] [MainThread]:   job_retries: 1
+[0m23:49:37.625236 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m23:49:37.625236 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m23:49:37.625236 [info ] [MainThread]:   timeout_seconds: 300
+[0m23:49:37.626245 [info ] [MainThread]:   client_id: None
+[0m23:49:37.626814 [info ] [MainThread]:   token_uri: None
+[0m23:49:37.626814 [info ] [MainThread]:   compute_region: None
+[0m23:49:37.627872 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m23:49:37.627872 [info ] [MainThread]:   gcs_bucket: None
+[0m23:49:37.628871 [info ] [MainThread]:   dataproc_batch: None
+[0m23:49:37.628871 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m23:49:37.979047 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m23:49:37.979047 [debug] [MainThread]: On debug: select 1 as id
+[0m23:49:37.979047 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:49:39.168659 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:25cf7359-5e1a-421f-9345-1c3af584f162&page=queryresults
+[0m23:49:39.705152 [debug] [MainThread]: SQL status: OK in 0.537 seconds
+[0m23:49:43.932024 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:49:43.932938 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:49:43.933937 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\churn-intelligence-platform\dbt_project\dbt_project.yml> not found
+
+[0m23:49:43.933937 [debug] [MainThread]: Command `dbt debug` failed at 23:49:43.933937 after 9.57 seconds
+[0m23:49:43.933937 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:49:43.935443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A17AB09DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A10D65CD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A17AF2F7A0>]}
+[0m23:49:43.935443 [debug] [MainThread]: Flushing usage events
+[0m23:49:44.495204 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:51:48.613202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF85627140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF88C06DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF88C07EF0>]}
+
+
+============================== 23:51:48.617315 | 942328f3-736f-4959-bc82-1bda679332bb ==============================
+[0m23:51:48.617315 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:51:48.617315 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\minde\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\churn-intelligence-platform\\dbt_project\\logs'}
+[0m23:51:48.623268 [info ] [MainThread]: dbt version: 1.11.11
+[0m23:51:48.623268 [info ] [MainThread]: python version: 3.12.10
+[0m23:51:48.633363 [info ] [MainThread]: python path: C:\churn-intelligence-platform\.venv\Scripts\python.exe
+[0m23:51:48.634493 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:51:49.428409 [info ] [MainThread]: Using profiles dir at C:\Users\minde\.dbt
+[0m23:51:49.429327 [info ] [MainThread]: Using profiles.yml file at C:\Users\minde\.dbt\profiles.yml
+[0m23:51:49.429327 [info ] [MainThread]: Using dbt_project.yml file at C:\churn-intelligence-platform\dbt_project\dbt_project.yml
+[0m23:51:49.430375 [info ] [MainThread]: adapter type: bigquery
+[0m23:51:49.430375 [info ] [MainThread]: adapter version: 1.11.1
+[0m23:51:49.523591 [info ] [MainThread]: Configuration:
+[0m23:51:49.523591 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:51:49.523591 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:51:49.523591 [info ] [MainThread]: Required dependencies:
+[0m23:51:49.528334 [debug] [MainThread]: Executing "git --help"
+[0m23:51:49.575806 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:51:49.576806 [debug] [MainThread]: STDERR: "b''"
+[0m23:51:49.576806 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:51:49.577807 [info ] [MainThread]: Connection:
+[0m23:51:49.577807 [info ] [MainThread]:   method: service-account
+[0m23:51:49.578811 [info ] [MainThread]:   database: my-project-mail-422110
+[0m23:51:49.578811 [info ] [MainThread]:   execution_project: my-project-mail-422110
+[0m23:51:49.578811 [info ] [MainThread]:   schema: ecommerce_marts
+[0m23:51:49.579811 [info ] [MainThread]:   location: US
+[0m23:51:49.579811 [info ] [MainThread]:   priority: None
+[0m23:51:49.579811 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m23:51:49.580809 [info ] [MainThread]:   impersonate_service_account: None
+[0m23:51:49.580809 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m23:51:49.580809 [info ] [MainThread]:   job_retries: 1
+[0m23:51:49.580809 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m23:51:49.581809 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m23:51:49.581809 [info ] [MainThread]:   timeout_seconds: 300
+[0m23:51:49.581809 [info ] [MainThread]:   client_id: None
+[0m23:51:49.583323 [info ] [MainThread]:   token_uri: None
+[0m23:51:49.584229 [info ] [MainThread]:   compute_region: None
+[0m23:51:49.584229 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m23:51:49.585307 [info ] [MainThread]:   gcs_bucket: None
+[0m23:51:49.585307 [info ] [MainThread]:   dataproc_batch: None
+[0m23:51:49.586308 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m23:51:49.933823 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m23:51:49.938614 [debug] [MainThread]: On debug: select 1 as id
+[0m23:51:49.939303 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:51:50.953215 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:526c1f70-eef8-424a-ba7b-d8555c5be529&page=queryresults
+[0m23:51:51.184440 [debug] [MainThread]: SQL status: OK in 0.224 seconds
+[0m23:51:51.404935 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:51:51.404935 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:51:51.404935 [debug] [MainThread]: Command `dbt debug` succeeded at 23:51:51.404935 after 2.97 seconds
+[0m23:51:51.404935 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:51:51.404935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF8AA49010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF8B7B31A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF9B06D820>]}
+[0m23:51:51.404935 [debug] [MainThread]: Flushing usage events
+[0m23:51:52.021351 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:54:30.553276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021ED3A480B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021ED3A493D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021ED3A481A0>]}
+
+
+============================== 23:54:30.558419 | a52e3370-0f63-40cf-95a3-2d5cdd574405 ==============================
+[0m23:54:30.558419 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:54:30.558871 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\minde\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\churn-intelligence-platform\\dbt_project\\logs'}
+[0m23:54:31.513491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a52e3370-0f63-40cf-95a3-2d5cdd574405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021ED4C68950>]}
+[0m23:54:31.568414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a52e3370-0f63-40cf-95a3-2d5cdd574405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021ED3A49490>]}
+[0m23:54:31.568414 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m23:54:31.959141 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m23:54:31.963409 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:54:31.963409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a52e3370-0f63-40cf-95a3-2d5cdd574405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EE608E900>]}
+[0m23:54:34.853194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a52e3370-0f63-40cf-95a3-2d5cdd574405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EE6326A20>]}
+[0m23:54:34.908690 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m23:54:34.913150 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m23:54:34.957310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a52e3370-0f63-40cf-95a3-2d5cdd574405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EE6530320>]}
+[0m23:54:34.957968 [info ] [MainThread]: Found 3 models, 549 macros
+[0m23:54:34.958632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a52e3370-0f63-40cf-95a3-2d5cdd574405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021ED3A487A0>]}
+[0m23:54:34.958632 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:54:34.958632 [debug] [MainThread]: Command end result
+[0m23:54:34.983366 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m23:54:34.983366 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m23:54:34.993138 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\churn-intelligence-platform\dbt_project\target\run_results.json
+[0m23:54:34.994681 [debug] [MainThread]: Command `dbt run` succeeded at 23:54:34.994147 after 4.61 seconds
+[0m23:54:34.994681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021ED38AF4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021ED328A6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021ED328AB40>]}
+[0m23:54:34.994681 [debug] [MainThread]: Flushing usage events
+[0m23:54:35.590792 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:56:07.581800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEE6C0B050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEE386BFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEE3BEDD90>]}
+
+
+============================== 23:56:07.587338 | 15d786f9-8b7f-486f-9999-83d4ea01dc46 ==============================
+[0m23:56:07.587338 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:56:07.587338 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\minde\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\churn-intelligence-platform\\dbt_project\\logs'}
+[0m23:56:08.604311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '15d786f9-8b7f-486f-9999-83d4ea01dc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEFB0999A0>]}
+[0m23:56:08.665302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '15d786f9-8b7f-486f-9999-83d4ea01dc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEE8EF8680>]}
+[0m23:56:08.667317 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m23:56:09.037348 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m23:56:09.243289 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m23:56:09.243289 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_events.sql
+[0m23:56:09.243289 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\intermediate\int_user_activity.sql
+[0m23:56:09.252304 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\marts\customer_features.sql
+[0m23:56:09.477183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '15d786f9-8b7f-486f-9999-83d4ea01dc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEFB6C8D70>]}
+[0m23:56:09.539500 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m23:56:09.541584 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m23:56:09.552372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '15d786f9-8b7f-486f-9999-83d4ea01dc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEFB47F4A0>]}
+[0m23:56:09.552372 [info ] [MainThread]: Found 3 models, 549 macros
+[0m23:56:09.553823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '15d786f9-8b7f-486f-9999-83d4ea01dc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEF9E605F0>]}
+[0m23:56:09.556656 [info ] [MainThread]: 
+[0m23:56:09.557806 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:56:09.558336 [info ] [MainThread]: 
+[0m23:56:09.558875 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:56:09.564023 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-mail-422110'
+[0m23:56:09.564755 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:56:10.583337 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-mail-422110_ecommerce_marts'
+[0m23:56:10.585973 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:56:11.507732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '15d786f9-8b7f-486f-9999-83d4ea01dc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEFB0F2C00>]}
+[0m23:56:11.507732 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:56:11.587292 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_events
+[0m23:56:11.587292 [info ] [Thread-1 (]: 1 of 3 START sql view model ecommerce_marts.stg_events ......................... [RUN]
+[0m23:56:11.593585 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_project.stg_events'
+[0m23:56:11.593585 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_events
+[0m23:56:11.595608 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_events"
+[0m23:56:11.603173 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_events
+[0m23:56:11.668276 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.stg_events"
+[0m23:56:11.670181 [debug] [Thread-1 (]: On model.dbt_project.stg_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_events"} */
+
+
+  create or replace view `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+  OPTIONS()
+  as with source as (
+    select * from `my-project-mail-422110.ecommerce_raw.events`
+),
+
+renamed as (
+    select
+        TIMESTAMP(event_time)           as event_time,
+        LOWER(TRIM(event_type))         as event_type,
+        CAST(product_id as INT64)       as product_id,
+        CAST(category_id as INT64)      as category_id,
+        LOWER(TRIM(category_code))      as category_code,
+        LOWER(TRIM(brand))              as brand,
+        CAST(price as FLOAT64)          as price,
+        CAST(user_id as INT64)          as user_id,
+        TRIM(user_session)              as user_session
+    from source
+    where
+        user_id is not null
+        and event_time is not null
+        and event_type in ('view', 'cart', 'purchase')
+)
+
+select * from renamed;
+
+
+[0m23:56:11.670181 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:56:12.823653 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:d4e18231-f3ef-4c28-9fc8-5ad04d17072e&page=queryresults
+[0m23:56:13.163303 [debug] [Thread-1 (]: SQL status: OK in 0.341 seconds
+[0m23:56:13.243352 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '15d786f9-8b7f-486f-9999-83d4ea01dc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEF9F2B8F0>]}
+[0m23:56:13.243352 [info ] [Thread-1 (]: 1 of 3 OK created sql view model ecommerce_marts.stg_events .................... [[32mCREATE VIEW (0 processed)[0m in 1.64s]
+[0m23:56:13.253771 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_events
+[0m23:56:13.253771 [debug] [Thread-3 (]: Began running node model.dbt_project.int_user_activity
+[0m23:56:13.253771 [info ] [Thread-3 (]: 2 of 3 START sql view model ecommerce_marts.int_user_activity .................. [RUN]
+[0m23:56:13.253771 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_project.int_user_activity'
+[0m23:56:13.253771 [debug] [Thread-3 (]: Began compiling node model.dbt_project.int_user_activity
+[0m23:56:13.253771 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_project.int_user_activity"
+[0m23:56:13.253771 [debug] [Thread-3 (]: Began executing node model.dbt_project.int_user_activity
+[0m23:56:13.263247 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_project.int_user_activity"
+[0m23:56:13.263247 [debug] [Thread-3 (]: On model.dbt_project.int_user_activity: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.int_user_activity"} */
+
+
+  create or replace view `my-project-mail-422110`.`ecommerce_marts`.`int_user_activity`
+  OPTIONS()
+  as with events as (
+    select * from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+),
+
+user_activity as (
+    select
+        user_id,
+        COUNT(*)                                                    as total_events,
+        COUNTIF(event_type = 'view')                                as total_views,
+        COUNTIF(event_type = 'cart')                                as total_cart_adds,
+        COUNTIF(event_type = 'purchase')                            as total_purchases,
+        SUM(case when event_type = 'purchase' then price else 0 end) as total_spend,
+        MIN(event_time)                                             as first_event_time,
+        MAX(event_time)                                             as last_event_time,
+        COUNT(DISTINCT DATE(event_time))                            as active_days,
+        COUNT(DISTINCT user_session)                                as total_sessions
+    from events
+    group by user_id
+)
+
+select * from user_activity;
+
+
+[0m23:56:13.263247 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m23:56:14.723313 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:60f46232-502e-40a7-b20d-cce5bcde4e0b&page=queryresults
+[0m23:56:15.043615 [debug] [Thread-3 (]: SQL status: OK in 0.321 seconds
+[0m23:56:15.043615 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '15d786f9-8b7f-486f-9999-83d4ea01dc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEFBAAFF80>]}
+[0m23:56:15.043615 [info ] [Thread-3 (]: 2 of 3 OK created sql view model ecommerce_marts.int_user_activity ............. [[32mCREATE VIEW (0 processed)[0m in 1.79s]
+[0m23:56:15.043615 [debug] [Thread-3 (]: Finished running node model.dbt_project.int_user_activity
+[0m23:56:15.052293 [debug] [Thread-2 (]: Began running node model.dbt_project.customer_features
+[0m23:56:15.052987 [info ] [Thread-2 (]: 3 of 3 START sql table model ecommerce_marts.customer_features ................. [RUN]
+[0m23:56:15.053568 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_project.customer_features'
+[0m23:56:15.053568 [debug] [Thread-2 (]: Began compiling node model.dbt_project.customer_features
+[0m23:56:15.058474 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_project.customer_features"
+[0m23:56:15.058474 [debug] [Thread-2 (]: Began executing node model.dbt_project.customer_features
+[0m23:56:15.093644 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_project.customer_features"
+[0m23:56:15.093644 [debug] [Thread-2 (]: On model.dbt_project.customer_features: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.customer_features"} */
+
+  
+    
+
+    create or replace table `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with activity as (
+    select * from `my-project-mail-422110`.`ecommerce_marts`.`int_user_activity`
+),
+
+events as (
+    select * from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+),
+
+-- October purchases per user
+oct_purchases as (
+    select
+        user_id,
+        COUNT(*) as oct_purchase_count
+    from events
+    where
+        event_type = 'purchase'
+        and DATE(event_time) between '2019-10-01' and '2019-10-31'
+    group by user_id
+),
+
+-- November purchases per user
+nov_purchases as (
+    select
+        user_id,
+        COUNT(*) as nov_purchase_count
+    from events
+    where
+        event_type = 'purchase'
+        and DATE(event_time) between '2019-11-01' and '2019-11-30'
+    group by user_id
+),
+
+final as (
+    select
+        a.user_id,
+
+        -- RFM features
+        DATE_DIFF(DATE('2019-11-30'), DATE(a.last_event_time), DAY)  as recency_days,
+        a.total_purchases                                             as frequency,
+        ROUND(a.total_spend, 2)                                       as monetary,
+
+        -- Behavioral features
+        ROUND(
+            SAFE_DIVIDE(a.total_cart_adds - a.total_purchases, a.total_cart_adds), 4
+        )                                                             as cart_abandon_rate,
+        ROUND(
+            SAFE_DIVIDE(a.total_purchases, a.total_views), 6
+        )                                                             as view_to_purchase_ratio,
+        a.active_days,
+        a.total_sessions,
+        a.total_views,
+        a.total_cart_adds,
+
+        -- Churn label
+        -- Churned = bought in October but NOT in November
+        case
+            when oct_purchases.oct_purchase_count > 0
+                 and nov_purchases.nov_purchase_count is null then 1
+            when oct_purchases.oct_purchase_count > 0
+                 and nov_purchases.nov_purchase_count > 0 then 0
+            else null  -- exclude users with no October purchases
+        end as churned
+
+    from activity a
+    left join oct_purchases on a.user_id = oct_purchases.user_id
+    left join nov_purchases on a.user_id = nov_purchases.user_id
+)
+
+select * from final
+where churned is not null  -- only keep labeled users
+    );
+  
+[0m23:56:15.093644 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m23:56:16.453523 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:dfb9f9af-308e-4f6b-8fc1-14f807f70a14&page=queryresults
+[0m23:56:20.317988 [debug] [Thread-2 (]: SQL status: OK in 3.865 seconds
+[0m23:56:20.523447 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '15d786f9-8b7f-486f-9999-83d4ea01dc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEFB7131A0>]}
+[0m23:56:20.523447 [info ] [Thread-2 (]: 3 of 3 OK created sql table model ecommerce_marts.customer_features ............ [[32mCREATE TABLE (8.3k rows, 32.5 MiB processed)[0m in 5.47s]
+[0m23:56:20.523447 [debug] [Thread-2 (]: Finished running node model.dbt_project.customer_features
+[0m23:56:20.523447 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:56:20.563373 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:56:20.563373 [debug] [MainThread]: Connection 'list_my-project-mail-422110' was properly closed.
+[0m23:56:20.563373 [debug] [MainThread]: Connection 'list_my-project-mail-422110_ecommerce_marts' was properly closed.
+[0m23:56:20.563373 [debug] [MainThread]: Connection 'model.dbt_project.stg_events' was properly closed.
+[0m23:56:20.563373 [debug] [MainThread]: Connection 'model.dbt_project.int_user_activity' was properly closed.
+[0m23:56:20.563373 [debug] [MainThread]: Connection 'model.dbt_project.customer_features' was properly closed.
+[0m23:56:20.563373 [info ] [MainThread]: 
+[0m23:56:20.563373 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 11.01 seconds (11.01s).
+[0m23:56:20.563373 [debug] [MainThread]: Command end result
+[0m23:56:20.593861 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m23:56:20.595876 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m23:56:20.601875 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\churn-intelligence-platform\dbt_project\target\run_results.json
+[0m23:56:20.602698 [info ] [MainThread]: 
+[0m23:56:20.603277 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:56:20.603277 [info ] [MainThread]: 
+[0m23:56:20.604290 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m23:56:20.604872 [debug] [MainThread]: Command `dbt run` succeeded at 23:56:20.604872 after 13.29 seconds
+[0m23:56:20.606063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEE807F3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEE6D924E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AEE8BEB650>]}
+[0m23:56:20.606063 [debug] [MainThread]: Flushing usage events
+[0m23:56:21.187241 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:57:28.403417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B2670AC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B28424860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B229DD7F0>]}
+
+
+============================== 23:57:28.413205 | 829f660a-ada3-4c8d-856e-ef7233fa6a0c ==============================
+[0m23:57:28.413205 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:57:28.413205 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\minde\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt test', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\churn-intelligence-platform\\dbt_project\\logs'}
+[0m23:57:29.317309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '829f660a-ada3-4c8d-856e-ef7233fa6a0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B2441D130>]}
+[0m23:57:29.377901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '829f660a-ada3-4c8d-856e-ef7233fa6a0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B39410BC0>]}
+[0m23:57:29.378902 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m23:57:29.733820 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m23:57:29.938649 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m23:57:29.939719 [debug] [MainThread]: Partial parsing: added file: dbt_project://models\staging\schema.yml
+[0m23:57:30.108392 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_events' in
+package 'dbt_project' (models\staging\schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+[0m23:57:30.108392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '829f660a-ada3-4c8d-856e-ef7233fa6a0c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B3ABCFFB0>]}
+[0m23:57:30.193546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '829f660a-ada3-4c8d-856e-ef7233fa6a0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B3B0F48F0>]}
+[0m23:57:30.272261 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m23:57:30.275298 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m23:57:30.314705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '829f660a-ada3-4c8d-856e-ef7233fa6a0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B3B29E000>]}
+[0m23:57:30.314705 [info ] [MainThread]: Found 3 models, 8 data tests, 549 macros
+[0m23:57:30.314705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '829f660a-ada3-4c8d-856e-ef7233fa6a0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B3B114C20>]}
+[0m23:57:30.314705 [info ] [MainThread]: 
+[0m23:57:30.314705 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:57:30.314705 [info ] [MainThread]: 
+[0m23:57:30.314705 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:57:30.326022 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-mail-422110_ecommerce_marts'
+[0m23:57:30.326022 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:57:31.493804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '829f660a-ada3-4c8d-856e-ef7233fa6a0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B3B01DDC0>]}
+[0m23:57:31.493804 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:57:31.533365 [debug] [Thread-1 (]: Began running node test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83
+[0m23:57:31.533365 [debug] [Thread-2 (]: Began running node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m23:57:31.533365 [debug] [Thread-3 (]: Began running node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m23:57:31.533365 [debug] [Thread-4 (]: Began running node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m23:57:31.533365 [info ] [Thread-1 (]: 1 of 8 START test accepted_values_customer_features_churned__0__1 .............. [RUN]
+[0m23:57:31.539008 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83'
+[0m23:57:31.539008 [debug] [Thread-1 (]: Began compiling node test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83
+[0m23:57:31.547650 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83"
+[0m23:57:31.533365 [info ] [Thread-2 (]: 2 of 8 START test accepted_values_stg_events_event_type__view__cart__purchase .. [RUN]
+[0m23:57:31.550005 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca'
+[0m23:57:31.533365 [info ] [Thread-3 (]: 3 of 8 START test not_null_customer_features_churned ........................... [RUN]
+[0m23:57:31.550005 [debug] [Thread-2 (]: Began compiling node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m23:57:31.551209 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.dbt_project.not_null_customer_features_churned.ab69f30650'
+[0m23:57:31.555863 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca"
+[0m23:57:31.556475 [debug] [Thread-3 (]: Began compiling node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m23:57:31.533365 [info ] [Thread-4 (]: 4 of 8 START test not_null_customer_features_user_id ........................... [RUN]
+[0m23:57:31.567217 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_project.not_null_customer_features_churned.ab69f30650"
+[0m23:57:31.567217 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.dbt_project.not_null_customer_features_user_id.b307620cad'
+[0m23:57:31.568260 [debug] [Thread-1 (]: Began executing node test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83
+[0m23:57:31.568260 [debug] [Thread-4 (]: Began compiling node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m23:57:31.569218 [debug] [Thread-2 (]: Began executing node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m23:57:31.590536 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83"
+[0m23:57:31.593827 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_project.not_null_customer_features_user_id.b307620cad"
+[0m23:57:31.597297 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca"
+[0m23:57:31.597297 [debug] [Thread-3 (]: Began executing node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m23:57:31.601040 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_project.not_null_customer_features_churned.ab69f30650"
+[0m23:57:31.602044 [debug] [Thread-4 (]: Began executing node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m23:57:31.604557 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_project.not_null_customer_features_user_id.b307620cad"
+[0m23:57:31.605564 [debug] [Thread-2 (]: On test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        event_type as value_field,
+        count(*) as n_records
+
+    from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+    group by event_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'view','cart','purchase'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:57:31.607001 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m23:57:31.607001 [debug] [Thread-3 (]: On test.dbt_project.not_null_customer_features_churned.ab69f30650: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_customer_features_churned.ab69f30650"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select churned
+from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+where churned is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:57:31.608008 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m23:57:31.608008 [debug] [Thread-1 (]: On test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        churned as value_field,
+        count(*) as n_records
+
+    from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+    group by churned
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '0','1'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:57:31.609095 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:57:31.714611 [debug] [Thread-4 (]: On test.dbt_project.not_null_customer_features_user_id.b307620cad: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_customer_features_user_id.b307620cad"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:57:31.714611 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m23:57:33.373421 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:94498dbe-bd89-4b77-8e6b-d9b2d5d18af6&page=queryresults
+[0m23:57:33.373421 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:94498dbe-bd89-4b77-8e6b-d9b2d5d18af6&page=queryresults
+[0m23:57:33.395985 [debug] [Thread-1 (]: Database Error in test accepted_values_customer_features_churned__0__1 (models\staging\schema.yml)
+  No matching signature for operator IN for argument types INT64 and {STRING} at [28:23]
+  compiled code at target\run\dbt_project\models\staging\schema.yml\accepted_values_customer_features_churned__0__1.sql
+[0m23:57:33.397612 [error] [Thread-1 (]: 1 of 8 ERROR accepted_values_customer_features_churned__0__1 ................... [[31mERROR[0m in 1.86s]
+[0m23:57:33.398695 [debug] [Thread-1 (]: Finished running node test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83
+[0m23:57:33.399030 [debug] [Thread-1 (]: Began running node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m23:57:33.400128 [debug] [Thread-7 (]: Marking all children of 'test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83' to be skipped because of status 'error'.  Reason: Database Error in test accepted_values_customer_features_churned__0__1 (models\staging\schema.yml)
+  No matching signature for operator IN for argument types INT64 and {STRING} at [28:23]
+  compiled code at target\run\dbt_project\models\staging\schema.yml\accepted_values_customer_features_churned__0__1.sql.
+[0m23:57:33.399030 [info ] [Thread-1 (]: 5 of 8 START test not_null_stg_events_event_time ............................... [RUN]
+[0m23:57:33.401162 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83, now test.dbt_project.not_null_stg_events_event_time.8dc5735367)
+[0m23:57:33.401494 [debug] [Thread-1 (]: Began compiling node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m23:57:33.405338 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project.not_null_stg_events_event_time.8dc5735367"
+[0m23:57:33.407628 [debug] [Thread-1 (]: Began executing node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m23:57:33.407628 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_project.not_null_stg_events_event_time.8dc5735367"
+[0m23:57:33.413507 [debug] [Thread-1 (]: On test.dbt_project.not_null_stg_events_event_time.8dc5735367: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_stg_events_event_time.8dc5735367"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_time
+from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+where event_time is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:57:33.420111 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:33.491339 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:8a6f52ae-d09c-4548-8b2f-ab994281be2a&page=queryresults
+[0m23:57:33.503467 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:7d116fa9-2de5-4a6d-8ef8-6ea068930d33&page=queryresults
+[0m23:57:33.707995 [debug] [Thread-4 (]: SQL status: OK in 0.201 seconds
+[0m23:57:33.733240 [debug] [Thread-3 (]: SQL status: OK in 0.244 seconds
+[0m23:57:33.757275 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:b48114ca-3299-4129-80bf-e221c9ce80ca&page=queryresults
+[0m23:57:33.923138 [debug] [Thread-2 (]: SQL status: OK in 0.167 seconds
+[0m23:57:34.103545 [info ] [Thread-3 (]: 3 of 8 PASS not_null_customer_features_churned ................................. [[32mPASS[0m in 2.55s]
+[0m23:57:34.113364 [debug] [Thread-3 (]: Finished running node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m23:57:34.113364 [debug] [Thread-3 (]: Began running node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m23:57:34.113364 [info ] [Thread-4 (]: 4 of 8 PASS not_null_customer_features_user_id ................................. [[32mPASS[0m in 2.55s]
+[0m23:57:34.116990 [debug] [Thread-4 (]: Finished running node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m23:57:34.115827 [info ] [Thread-3 (]: 6 of 8 START test not_null_stg_events_event_type ............................... [RUN]
+[0m23:57:34.116990 [debug] [Thread-4 (]: Began running node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m23:57:34.118227 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_customer_features_churned.ab69f30650, now test.dbt_project.not_null_stg_events_event_type.ca8d147ba2)
+[0m23:57:34.118227 [info ] [Thread-4 (]: 7 of 8 START test not_null_stg_events_user_id .................................. [RUN]
+[0m23:57:34.119228 [debug] [Thread-3 (]: Began compiling node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m23:57:34.119228 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_customer_features_user_id.b307620cad, now test.dbt_project.not_null_stg_events_user_id.63ec98fbc4)
+[0m23:57:34.124275 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_project.not_null_stg_events_event_type.ca8d147ba2"
+[0m23:57:34.124275 [debug] [Thread-4 (]: Began compiling node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m23:57:34.129987 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_project.not_null_stg_events_user_id.63ec98fbc4"
+[0m23:57:34.131994 [debug] [Thread-3 (]: Began executing node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m23:57:34.136141 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_project.not_null_stg_events_event_type.ca8d147ba2"
+[0m23:57:34.137144 [debug] [Thread-4 (]: Began executing node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m23:57:34.141766 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_project.not_null_stg_events_user_id.63ec98fbc4"
+[0m23:57:34.143278 [debug] [Thread-3 (]: On test.dbt_project.not_null_stg_events_event_type.ca8d147ba2: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_stg_events_event_type.ca8d147ba2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_type
+from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+where event_type is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:57:34.143278 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:57:34.143278 [debug] [Thread-4 (]: On test.dbt_project.not_null_stg_events_user_id.63ec98fbc4: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_stg_events_user_id.63ec98fbc4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:57:34.143278 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m23:57:34.303523 [info ] [Thread-2 (]: 2 of 8 PASS accepted_values_stg_events_event_type__view__cart__purchase ........ [[32mPASS[0m in 2.75s]
+[0m23:57:34.303523 [debug] [Thread-2 (]: Finished running node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m23:57:34.303523 [debug] [Thread-2 (]: Began running node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m23:57:34.303523 [info ] [Thread-2 (]: 8 of 8 START test unique_customer_features_user_id ............................. [RUN]
+[0m23:57:34.303523 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca, now test.dbt_project.unique_customer_features_user_id.1bddc8fff0)
+[0m23:57:34.303523 [debug] [Thread-2 (]: Began compiling node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m23:57:34.319993 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_project.unique_customer_features_user_id.1bddc8fff0"
+[0m23:57:34.319993 [debug] [Thread-2 (]: Began executing node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m23:57:34.323502 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_project.unique_customer_features_user_id.1bddc8fff0"
+[0m23:57:34.325529 [debug] [Thread-2 (]: On test.dbt_project.unique_customer_features_user_id.1bddc8fff0: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.unique_customer_features_user_id.1bddc8fff0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select user_id as unique_field
+  from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+  where user_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:57:34.325529 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:57:34.899207 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:f2b6227f-ca9a-4c20-a451-0ac2e1b3e8f5&page=queryresults
+[0m23:57:35.093070 [debug] [Thread-1 (]: SQL status: OK in 0.191 seconds
+[0m23:57:35.807587 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:5075bd28-531f-4bdc-b53b-2377a930743a&page=queryresults
+[0m23:57:35.817381 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:b682a4c7-fff1-4328-b1a8-29a76e76523e&page=queryresults
+[0m23:57:35.823475 [info ] [Thread-1 (]: 5 of 8 PASS not_null_stg_events_event_time ..................................... [[32mPASS[0m in 2.42s]
+[0m23:57:35.825045 [debug] [Thread-1 (]: Finished running node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m23:57:36.001008 [debug] [Thread-4 (]: SQL status: OK in 0.194 seconds
+[0m23:57:36.004753 [debug] [Thread-3 (]: SQL status: OK in 0.186 seconds
+[0m23:57:36.241949 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:eb66a30c-9651-4c55-b48b-6a0e8cca74bd&page=queryresults
+[0m23:57:36.282756 [info ] [Thread-4 (]: 7 of 8 PASS not_null_stg_events_user_id ........................................ [[32mPASS[0m in 2.16s]
+[0m23:57:36.284321 [debug] [Thread-4 (]: Finished running node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m23:57:36.336503 [info ] [Thread-3 (]: 6 of 8 PASS not_null_stg_events_event_type ..................................... [[32mPASS[0m in 2.22s]
+[0m23:57:36.337597 [debug] [Thread-3 (]: Finished running node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m23:57:36.383945 [debug] [Thread-2 (]: SQL status: OK in 0.143 seconds
+[0m23:57:36.743778 [info ] [Thread-2 (]: 8 of 8 PASS unique_customer_features_user_id ................................... [[32mPASS[0m in 2.44s]
+[0m23:57:36.748766 [debug] [Thread-2 (]: Finished running node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m23:57:36.749137 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:57:36.783300 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:57:36.783300 [debug] [MainThread]: Connection 'list_my-project-mail-422110_ecommerce_marts' was properly closed.
+[0m23:57:36.788555 [debug] [MainThread]: Connection 'test.dbt_project.not_null_stg_events_event_time.8dc5735367' was properly closed.
+[0m23:57:36.788555 [debug] [MainThread]: Connection 'test.dbt_project.unique_customer_features_user_id.1bddc8fff0' was properly closed.
+[0m23:57:36.788555 [debug] [MainThread]: Connection 'test.dbt_project.not_null_stg_events_event_type.ca8d147ba2' was properly closed.
+[0m23:57:36.788555 [debug] [MainThread]: Connection 'test.dbt_project.not_null_stg_events_user_id.63ec98fbc4' was properly closed.
+[0m23:57:36.788555 [info ] [MainThread]: 
+[0m23:57:36.788555 [info ] [MainThread]: Finished running 8 data tests in 0 hours 0 minutes and 6.47 seconds (6.47s).
+[0m23:57:36.788555 [debug] [MainThread]: Command end result
+[0m23:57:36.819574 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m23:57:36.823634 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m23:57:36.833707 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\churn-intelligence-platform\dbt_project\target\run_results.json
+[0m23:57:36.834282 [info ] [MainThread]: 
+[0m23:57:36.835408 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:57:36.835932 [info ] [MainThread]: 
+[0m23:57:36.837004 [error] [MainThread]: [31mFailure in test accepted_values_customer_features_churned__0__1 (models\staging\schema.yml)[0m
+[0m23:57:36.837550 [error] [MainThread]:   Database Error in test accepted_values_customer_features_churned__0__1 (models\staging\schema.yml)
+  No matching signature for operator IN for argument types INT64 and {STRING} at [28:23]
+  compiled code at target\run\dbt_project\models\staging\schema.yml\accepted_values_customer_features_churned__0__1.sql
+[0m23:57:36.838739 [info ] [MainThread]: 
+[0m23:57:36.839316 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\staging\schema.yml\accepted_values_customer_features_churned__0__1.sql
+[0m23:57:36.839855 [info ] [MainThread]: 
+[0m23:57:36.840391 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=8
+[0m23:57:36.841459 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m23:57:36.843186 [debug] [MainThread]: Command `dbt test` failed at 23:57:36.842603 after 8.59 seconds
+[0m23:57:36.843186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B26E8B0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B26FA3EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B26FA3A40>]}
+[0m23:57:36.843704 [debug] [MainThread]: Flushing usage events
+[0m23:57:37.443719 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:59:53.762245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E55790AFF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5545202C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E55785E180>]}
+
+
+============================== 23:59:53.762245 | f3fa84e4-59b2-453a-abf8-288d146c63c1 ==============================
+[0m23:59:53.762245 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:59:53.762245 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\minde\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt test', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\churn-intelligence-platform\\dbt_project\\logs'}
+[0m23:59:54.675565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f3fa84e4-59b2-453a-abf8-288d146c63c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E55478EA50>]}
+[0m23:59:54.732469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f3fa84e4-59b2-453a-abf8-288d146c63c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E569E7A990>]}
+[0m23:59:54.732469 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m23:59:55.095702 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m23:59:55.324080 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:59:55.324080 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\schema.yml
+[0m23:59:55.725315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f3fa84e4-59b2-453a-abf8-288d146c63c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E56C54F650>]}
+[0m23:59:55.792140 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m23:59:55.792140 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m23:59:55.816641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f3fa84e4-59b2-453a-abf8-288d146c63c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E56C6A1EE0>]}
+[0m23:59:55.816641 [info ] [MainThread]: Found 3 models, 8 data tests, 549 macros
+[0m23:59:55.816641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f3fa84e4-59b2-453a-abf8-288d146c63c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E56C2C5340>]}
+[0m23:59:55.823873 [info ] [MainThread]: 
+[0m23:59:55.825430 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:59:55.827799 [info ] [MainThread]: 
+[0m23:59:55.830824 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:59:55.838892 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-mail-422110_ecommerce_marts'
+[0m23:59:55.839900 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:59:56.826276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f3fa84e4-59b2-453a-abf8-288d146c63c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E56C39CBF0>]}
+[0m23:59:56.826276 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:59:56.862406 [debug] [Thread-1 (]: Began running node test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83
+[0m23:59:56.862406 [debug] [Thread-2 (]: Began running node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m23:59:56.862406 [info ] [Thread-1 (]: 1 of 8 START test accepted_values_customer_features_churned__0__1 .............. [RUN]
+[0m23:59:56.862406 [debug] [Thread-3 (]: Began running node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m23:59:56.862406 [info ] [Thread-2 (]: 2 of 8 START test accepted_values_stg_events_event_type__view__cart__purchase .. [RUN]
+[0m23:59:56.862406 [debug] [Thread-4 (]: Began running node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m23:59:56.862406 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83'
+[0m23:59:56.874954 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca'
+[0m23:59:56.862406 [info ] [Thread-3 (]: 3 of 8 START test not_null_customer_features_churned ........................... [RUN]
+[0m23:59:56.875408 [debug] [Thread-1 (]: Began compiling node test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83
+[0m23:59:56.875408 [debug] [Thread-2 (]: Began compiling node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m23:59:56.875408 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.dbt_project.not_null_customer_features_churned.ab69f30650'
+[0m23:59:56.875408 [info ] [Thread-4 (]: 4 of 8 START test not_null_customer_features_user_id ........................... [RUN]
+[0m23:59:56.885366 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83"
+[0m23:59:56.889228 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca"
+[0m23:59:56.890289 [debug] [Thread-3 (]: Began compiling node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m23:59:56.890289 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.dbt_project.not_null_customer_features_user_id.b307620cad'
+[0m23:59:56.898923 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_project.not_null_customer_features_churned.ab69f30650"
+[0m23:59:56.898923 [debug] [Thread-4 (]: Began compiling node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m23:59:56.902517 [debug] [Thread-1 (]: Began executing node test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83
+[0m23:59:56.902517 [debug] [Thread-2 (]: Began executing node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m23:59:56.903480 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_project.not_null_customer_features_user_id.b307620cad"
+[0m23:59:56.929796 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83"
+[0m23:59:56.932499 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca"
+[0m23:59:56.933044 [debug] [Thread-3 (]: Began executing node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m23:59:56.935826 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_project.not_null_customer_features_churned.ab69f30650"
+[0m23:59:56.937005 [debug] [Thread-4 (]: Began executing node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m23:59:56.939013 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_project.not_null_customer_features_user_id.b307620cad"
+[0m23:59:56.940030 [debug] [Thread-2 (]: On test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        event_type as value_field,
+        count(*) as n_records
+
+    from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+    group by event_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'view','cart','purchase'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:59:56.940030 [debug] [Thread-1 (]: On test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        churned as value_field,
+        count(*) as n_records
+
+    from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+    group by churned
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '0','1'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:59:56.941163 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m23:59:56.941163 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:59:56.942182 [debug] [Thread-3 (]: On test.dbt_project.not_null_customer_features_churned.ab69f30650: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_customer_features_churned.ab69f30650"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select churned
+from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+where churned is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:59:56.942182 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m23:59:57.044826 [debug] [Thread-4 (]: On test.dbt_project.not_null_customer_features_user_id.b307620cad: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_customer_features_user_id.b307620cad"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:59:57.052262 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m23:59:58.593698 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:69316fb8-22a9-4700-86df-14422eda4746&page=queryresults
+[0m23:59:58.594753 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:69316fb8-22a9-4700-86df-14422eda4746&page=queryresults
+[0m23:59:58.602024 [debug] [Thread-1 (]: Database Error in test accepted_values_customer_features_churned__0__1 (models\staging\schema.yml)
+  No matching signature for operator IN for argument types INT64 and {STRING} at [28:23]
+  compiled code at target\run\dbt_project\models\staging\schema.yml\accepted_values_customer_features_churned__0__1.sql
+[0m23:59:58.603181 [error] [Thread-1 (]: 1 of 8 ERROR accepted_values_customer_features_churned__0__1 ................... [[31mERROR[0m in 1.74s]
+[0m23:59:58.604274 [debug] [Thread-1 (]: Finished running node test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83
+[0m23:59:58.604274 [debug] [Thread-1 (]: Began running node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m23:59:58.605272 [debug] [Thread-7 (]: Marking all children of 'test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83' to be skipped because of status 'error'.  Reason: Database Error in test accepted_values_customer_features_churned__0__1 (models\staging\schema.yml)
+  No matching signature for operator IN for argument types INT64 and {STRING} at [28:23]
+  compiled code at target\run\dbt_project\models\staging\schema.yml\accepted_values_customer_features_churned__0__1.sql.
+[0m23:59:58.605272 [info ] [Thread-1 (]: 5 of 8 START test not_null_stg_events_event_time ............................... [RUN]
+[0m23:59:58.606272 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project.accepted_values_customer_features_churned__0__1.cb040fcb83, now test.dbt_project.not_null_stg_events_event_time.8dc5735367)
+[0m23:59:58.607272 [debug] [Thread-1 (]: Began compiling node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m23:59:58.613794 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project.not_null_stg_events_event_time.8dc5735367"
+[0m23:59:58.614800 [debug] [Thread-1 (]: Began executing node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m23:59:58.617799 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_project.not_null_stg_events_event_time.8dc5735367"
+[0m23:59:58.618800 [debug] [Thread-1 (]: On test.dbt_project.not_null_stg_events_event_time.8dc5735367: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_stg_events_event_time.8dc5735367"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_time
+from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+where event_time is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:59:58.619917 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:58.674787 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:55094b9b-80ae-4511-a18b-b61ff5767c08&page=queryresults
+[0m23:59:58.825283 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:58d5cabe-246f-41c3-b582-0f9349df2c45&page=queryresults
+[0m23:59:58.834039 [debug] [Thread-4 (]: SQL status: OK in 0.159 seconds
+[0m23:59:58.836049 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:adee9c1d-fafa-4eea-a8b7-ab8351233835&page=queryresults
+[0m23:59:58.997342 [debug] [Thread-2 (]: SQL status: OK in 0.173 seconds
+[0m23:59:59.025904 [debug] [Thread-3 (]: SQL status: OK in 0.191 seconds
+[0m23:59:59.209202 [info ] [Thread-4 (]: 4 of 8 PASS not_null_customer_features_user_id ................................. [[32mPASS[0m in 2.32s]
+[0m23:59:59.210475 [debug] [Thread-4 (]: Finished running node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m23:59:59.211550 [debug] [Thread-4 (]: Began running node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m23:59:59.211550 [info ] [Thread-4 (]: 6 of 8 START test not_null_stg_events_event_type ............................... [RUN]
+[0m23:59:59.212143 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_customer_features_user_id.b307620cad, now test.dbt_project.not_null_stg_events_event_type.ca8d147ba2)
+[0m23:59:59.212143 [debug] [Thread-4 (]: Began compiling node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m23:59:59.217561 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_project.not_null_stg_events_event_type.ca8d147ba2"
+[0m23:59:59.218557 [debug] [Thread-4 (]: Began executing node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m23:59:59.221653 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_project.not_null_stg_events_event_type.ca8d147ba2"
+[0m23:59:59.222266 [debug] [Thread-4 (]: On test.dbt_project.not_null_stg_events_event_type.ca8d147ba2: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_stg_events_event_type.ca8d147ba2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_type
+from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+where event_type is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:59:59.223277 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m23:59:59.332438 [info ] [Thread-2 (]: 2 of 8 PASS accepted_values_stg_events_event_type__view__cart__purchase ........ [[32mPASS[0m in 2.46s]
+[0m23:59:59.334510 [debug] [Thread-2 (]: Finished running node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m23:59:59.334510 [debug] [Thread-2 (]: Began running node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m23:59:59.334510 [info ] [Thread-2 (]: 7 of 8 START test not_null_stg_events_user_id .................................. [RUN]
+[0m23:59:59.336515 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca, now test.dbt_project.not_null_stg_events_user_id.63ec98fbc4)
+[0m23:59:59.336515 [debug] [Thread-2 (]: Began compiling node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m23:59:59.343703 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_project.not_null_stg_events_user_id.63ec98fbc4"
+[0m23:59:59.345442 [debug] [Thread-2 (]: Began executing node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m23:59:59.348039 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_project.not_null_stg_events_user_id.63ec98fbc4"
+[0m23:59:59.349103 [debug] [Thread-2 (]: On test.dbt_project.not_null_stg_events_user_id.63ec98fbc4: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_stg_events_user_id.63ec98fbc4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:59:59.349624 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:59:59.396690 [info ] [Thread-3 (]: 3 of 8 PASS not_null_customer_features_churned ................................. [[32mPASS[0m in 2.52s]
+[0m23:59:59.397689 [debug] [Thread-3 (]: Finished running node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m23:59:59.398689 [debug] [Thread-3 (]: Began running node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m23:59:59.398689 [info ] [Thread-3 (]: 8 of 8 START test unique_customer_features_user_id ............................. [RUN]
+[0m23:59:59.399688 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_customer_features_churned.ab69f30650, now test.dbt_project.unique_customer_features_user_id.1bddc8fff0)
+[0m23:59:59.399688 [debug] [Thread-3 (]: Began compiling node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m23:59:59.407241 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_project.unique_customer_features_user_id.1bddc8fff0"
+[0m23:59:59.409107 [debug] [Thread-3 (]: Began executing node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m23:59:59.413619 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_project.unique_customer_features_user_id.1bddc8fff0"
+[0m23:59:59.415625 [debug] [Thread-3 (]: On test.dbt_project.unique_customer_features_user_id.1bddc8fff0: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.unique_customer_features_user_id.1bddc8fff0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select user_id as unique_field
+  from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+  where user_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:59:59.415625 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m00:00:00.002285 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:26c8049f-3aa7-48a0-a3ce-4a6a71346819&page=queryresults
+[0m00:00:00.195687 [debug] [Thread-1 (]: SQL status: OK in 0.193 seconds
+[0m00:00:00.572205 [info ] [Thread-1 (]: 5 of 8 PASS not_null_stg_events_event_time ..................................... [[32mPASS[0m in 1.97s]
+[0m00:00:00.573956 [debug] [Thread-1 (]: Finished running node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m00:00:00.883553 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:2d8fb2fa-df62-4651-86d2-15e6562efc1f&page=queryresults
+[0m00:00:00.902296 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:aff6b3dd-5975-47a1-8d27-3f42a3e546e4&page=queryresults
+[0m00:00:01.062371 [debug] [Thread-3 (]: SQL status: OK in 0.157 seconds
+[0m00:00:01.142299 [debug] [Thread-2 (]: SQL status: OK in 0.260 seconds
+[0m00:00:01.358620 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:2a5e84e1-229b-456b-978e-dd8c1aa0e200&page=queryresults
+[0m00:00:01.441030 [info ] [Thread-3 (]: 8 of 8 PASS unique_customer_features_user_id ................................... [[32mPASS[0m in 2.04s]
+[0m00:00:01.441030 [debug] [Thread-3 (]: Finished running node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m00:00:01.514558 [debug] [Thread-4 (]: SQL status: OK in 0.146 seconds
+[0m00:00:01.541749 [info ] [Thread-2 (]: 7 of 8 PASS not_null_stg_events_user_id ........................................ [[32mPASS[0m in 2.21s]
+[0m00:00:01.541749 [debug] [Thread-2 (]: Finished running node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m00:00:01.928704 [info ] [Thread-4 (]: 6 of 8 PASS not_null_stg_events_event_type ..................................... [[32mPASS[0m in 2.72s]
+[0m00:00:01.930030 [debug] [Thread-4 (]: Finished running node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m00:00:01.931703 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:00:01.980000 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:00:01.980000 [debug] [MainThread]: Connection 'list_my-project-mail-422110_ecommerce_marts' was properly closed.
+[0m00:00:01.980000 [debug] [MainThread]: Connection 'test.dbt_project.not_null_stg_events_event_time.8dc5735367' was properly closed.
+[0m00:00:01.980000 [debug] [MainThread]: Connection 'test.dbt_project.not_null_stg_events_user_id.63ec98fbc4' was properly closed.
+[0m00:00:01.980000 [debug] [MainThread]: Connection 'test.dbt_project.unique_customer_features_user_id.1bddc8fff0' was properly closed.
+[0m00:00:01.980000 [debug] [MainThread]: Connection 'test.dbt_project.not_null_stg_events_event_type.ca8d147ba2' was properly closed.
+[0m00:00:01.980000 [info ] [MainThread]: 
+[0m00:00:01.980000 [info ] [MainThread]: Finished running 8 data tests in 0 hours 0 minutes and 6.15 seconds (6.15s).
+[0m00:00:01.980000 [debug] [MainThread]: Command end result
+[0m00:00:02.014023 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m00:00:02.025377 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m00:00:02.032930 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\churn-intelligence-platform\dbt_project\target\run_results.json
+[0m00:00:02.033937 [info ] [MainThread]: 
+[0m00:00:02.033937 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:00:02.033937 [info ] [MainThread]: 
+[0m00:00:02.033937 [error] [MainThread]: [31mFailure in test accepted_values_customer_features_churned__0__1 (models\staging\schema.yml)[0m
+[0m00:00:02.033937 [error] [MainThread]:   Database Error in test accepted_values_customer_features_churned__0__1 (models\staging\schema.yml)
+  No matching signature for operator IN for argument types INT64 and {STRING} at [28:23]
+  compiled code at target\run\dbt_project\models\staging\schema.yml\accepted_values_customer_features_churned__0__1.sql
+[0m00:00:02.033937 [info ] [MainThread]: 
+[0m00:00:02.033937 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\staging\schema.yml\accepted_values_customer_features_churned__0__1.sql
+[0m00:00:02.033937 [info ] [MainThread]: 
+[0m00:00:02.033937 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=8
+[0m00:00:02.033937 [debug] [MainThread]: Command `dbt test` failed at 00:00:02.033937 after 8.42 seconds
+[0m00:00:02.041284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E554418470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E56C5E3FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E557B3D790>]}
+[0m00:00:02.042075 [debug] [MainThread]: Flushing usage events
+[0m00:00:02.709070 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:01:03.762246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249581A5490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002495D5B11C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002495D5B10D0>]}
+
+
+============================== 00:01:03.762246 | 4dfbcad8-2cd1-4540-8387-d5c199cff51c ==============================
+[0m00:01:03.762246 [info ] [MainThread]: Running with dbt=1.11.11
+[0m00:01:03.770756 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\minde\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt test --no-partial-parse', 'use_experimental_parser': 'False', 'log_path': 'C:\\churn-intelligence-platform\\dbt_project\\logs'}
+[0m00:01:04.735792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4dfbcad8-2cd1-4540-8387-d5c199cff51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002496E797AD0>]}
+[0m00:01:04.792710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4dfbcad8-2cd1-4540-8387-d5c199cff51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002496EB3DD90>]}
+[0m00:01:04.792710 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m00:01:05.182307 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m00:01:05.182307 [debug] [MainThread]: Partial parsing not enabled
+[0m00:01:06.782256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4dfbcad8-2cd1-4540-8387-d5c199cff51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024970425A00>]}
+[0m00:01:06.872244 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m00:01:06.872244 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m00:01:06.906594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4dfbcad8-2cd1-4540-8387-d5c199cff51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024970597FE0>]}
+[0m00:01:06.907157 [info ] [MainThread]: Found 3 models, 7 data tests, 549 macros
+[0m00:01:06.907708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4dfbcad8-2cd1-4540-8387-d5c199cff51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249587924E0>]}
+[0m00:01:06.909404 [info ] [MainThread]: 
+[0m00:01:06.909976 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:01:06.910519 [info ] [MainThread]: 
+[0m00:01:06.911065 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m00:01:06.914980 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-mail-422110_ecommerce_marts'
+[0m00:01:06.914980 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:01:08.039911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4dfbcad8-2cd1-4540-8387-d5c199cff51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002497027EB70>]}
+[0m00:01:08.039911 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:01:08.082044 [debug] [Thread-1 (]: Began running node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m00:01:08.082044 [debug] [Thread-2 (]: Began running node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m00:01:08.082044 [debug] [Thread-3 (]: Began running node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m00:01:08.082044 [debug] [Thread-4 (]: Began running node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m00:01:08.082044 [info ] [Thread-1 (]: 1 of 7 START test accepted_values_stg_events_event_type__view__cart__purchase .. [RUN]
+[0m00:01:08.087816 [info ] [Thread-2 (]: 2 of 7 START test not_null_customer_features_churned ........................... [RUN]
+[0m00:01:08.088243 [info ] [Thread-3 (]: 3 of 7 START test not_null_customer_features_user_id ........................... [RUN]
+[0m00:01:08.090378 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca'
+[0m00:01:08.090378 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.dbt_project.not_null_customer_features_churned.ab69f30650'
+[0m00:01:08.088243 [info ] [Thread-4 (]: 4 of 7 START test not_null_stg_events_event_time ............................... [RUN]
+[0m00:01:08.092389 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.dbt_project.not_null_customer_features_user_id.b307620cad'
+[0m00:01:08.094382 [debug] [Thread-1 (]: Began compiling node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m00:01:08.094382 [debug] [Thread-2 (]: Began compiling node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m00:01:08.095397 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.dbt_project.not_null_stg_events_event_time.8dc5735367'
+[0m00:01:08.096398 [debug] [Thread-3 (]: Began compiling node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m00:01:08.107191 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca"
+[0m00:01:08.117095 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_project.not_null_customer_features_churned.ab69f30650"
+[0m00:01:08.117095 [debug] [Thread-4 (]: Began compiling node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m00:01:08.123200 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_project.not_null_customer_features_user_id.b307620cad"
+[0m00:01:08.123200 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_project.not_null_stg_events_event_time.8dc5735367"
+[0m00:01:08.123200 [debug] [Thread-1 (]: Began executing node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m00:01:08.152462 [debug] [Thread-2 (]: Began executing node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m00:01:08.153994 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca"
+[0m00:01:08.155006 [debug] [Thread-3 (]: Began executing node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m00:01:08.158006 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_project.not_null_customer_features_churned.ab69f30650"
+[0m00:01:08.158006 [debug] [Thread-4 (]: Began executing node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m00:01:08.162005 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_project.not_null_customer_features_user_id.b307620cad"
+[0m00:01:08.165537 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_project.not_null_stg_events_event_time.8dc5735367"
+[0m00:01:08.166536 [debug] [Thread-1 (]: On test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        event_type as value_field,
+        count(*) as n_records
+
+    from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+    group by event_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'view','cart','purchase'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:01:08.167538 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:01:08.167538 [debug] [Thread-3 (]: On test.dbt_project.not_null_customer_features_user_id.b307620cad: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_customer_features_user_id.b307620cad"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:01:08.168538 [debug] [Thread-2 (]: On test.dbt_project.not_null_customer_features_churned.ab69f30650: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_customer_features_churned.ab69f30650"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select churned
+from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+where churned is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:01:08.169539 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:01:08.169539 [debug] [Thread-4 (]: On test.dbt_project.not_null_stg_events_event_time.8dc5735367: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_stg_events_event_time.8dc5735367"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_time
+from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+where event_time is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:01:08.170533 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m00:01:08.212463 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m00:01:10.248244 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:c16f6008-d5cc-4de1-9fa3-7aa6f683d7d1&page=queryresults
+[0m00:01:10.279342 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:81b59a1a-7733-41b4-bada-ce2fe431eaa1&page=queryresults
+[0m00:01:10.283934 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:73d5112d-10b4-4fc3-8d19-526c91cc99d4&page=queryresults
+[0m00:01:10.315311 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:e43dcc80-8dbd-42dd-b6d4-6c738daba0b9&page=queryresults
+[0m00:01:10.455845 [debug] [Thread-2 (]: SQL status: OK in 0.175 seconds
+[0m00:01:10.482405 [debug] [Thread-3 (]: SQL status: OK in 0.233 seconds
+[0m00:01:10.495407 [debug] [Thread-1 (]: SQL status: OK in 0.178 seconds
+[0m00:01:10.502278 [debug] [Thread-4 (]: SQL status: OK in 0.217 seconds
+[0m00:01:10.870019 [info ] [Thread-1 (]: 1 of 7 PASS accepted_values_stg_events_event_type__view__cart__purchase ........ [[32mPASS[0m in 2.78s]
+[0m00:01:10.870930 [debug] [Thread-1 (]: Finished running node test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca
+[0m00:01:10.872051 [debug] [Thread-1 (]: Began running node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m00:01:10.872827 [info ] [Thread-1 (]: 5 of 7 START test not_null_stg_events_event_type ............................... [RUN]
+[0m00:01:10.874841 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project.accepted_values_stg_events_event_type__view__cart__purchase.103285c3ca, now test.dbt_project.not_null_stg_events_event_type.ca8d147ba2)
+[0m00:01:10.874841 [debug] [Thread-1 (]: Began compiling node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m00:01:10.878929 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project.not_null_stg_events_event_type.ca8d147ba2"
+[0m00:01:10.882684 [info ] [Thread-3 (]: 3 of 7 PASS not_null_customer_features_user_id ................................. [[32mPASS[0m in 2.79s]
+[0m00:01:10.883188 [debug] [Thread-3 (]: Finished running node test.dbt_project.not_null_customer_features_user_id.b307620cad
+[0m00:01:10.884238 [debug] [Thread-3 (]: Began running node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m00:01:10.884238 [info ] [Thread-3 (]: 6 of 7 START test not_null_stg_events_user_id .................................. [RUN]
+[0m00:01:10.885193 [debug] [Thread-1 (]: Began executing node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m00:01:10.887193 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_customer_features_user_id.b307620cad, now test.dbt_project.not_null_stg_events_user_id.63ec98fbc4)
+[0m00:01:10.889460 [info ] [Thread-2 (]: 2 of 7 PASS not_null_customer_features_churned ................................. [[32mPASS[0m in 2.80s]
+[0m00:01:10.892709 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_project.not_null_stg_events_event_type.ca8d147ba2"
+[0m00:01:10.892709 [debug] [Thread-3 (]: Began compiling node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m00:01:10.893749 [debug] [Thread-2 (]: Finished running node test.dbt_project.not_null_customer_features_churned.ab69f30650
+[0m00:01:10.900616 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_project.not_null_stg_events_user_id.63ec98fbc4"
+[0m00:01:10.901709 [debug] [Thread-2 (]: Began running node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m00:01:10.902622 [debug] [Thread-1 (]: On test.dbt_project.not_null_stg_events_event_type.ca8d147ba2: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_stg_events_event_type.ca8d147ba2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_type
+from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+where event_type is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:01:10.902622 [info ] [Thread-2 (]: 7 of 7 START test unique_customer_features_user_id ............................. [RUN]
+[0m00:01:10.904078 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:01:10.905078 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_customer_features_churned.ab69f30650, now test.dbt_project.unique_customer_features_user_id.1bddc8fff0)
+[0m00:01:10.906076 [debug] [Thread-3 (]: Began executing node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m00:01:10.906076 [debug] [Thread-2 (]: Began compiling node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m00:01:10.909077 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_project.not_null_stg_events_user_id.63ec98fbc4"
+[0m00:01:10.949694 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_project.unique_customer_features_user_id.1bddc8fff0"
+[0m00:01:10.957268 [info ] [Thread-4 (]: 4 of 7 PASS not_null_stg_events_event_time ..................................... [[32mPASS[0m in 2.86s]
+[0m00:01:10.958270 [debug] [Thread-4 (]: Finished running node test.dbt_project.not_null_stg_events_event_time.8dc5735367
+[0m00:01:10.959268 [debug] [Thread-3 (]: On test.dbt_project.not_null_stg_events_user_id.63ec98fbc4: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.not_null_stg_events_user_id.63ec98fbc4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from `my-project-mail-422110`.`ecommerce_marts`.`stg_events`
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:01:10.960270 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m00:01:10.961268 [debug] [Thread-2 (]: Began executing node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m00:01:10.963948 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_project.unique_customer_features_user_id.1bddc8fff0"
+[0m00:01:11.005420 [debug] [Thread-2 (]: On test.dbt_project.unique_customer_features_user_id.1bddc8fff0: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.dbt_project.unique_customer_features_user_id.1bddc8fff0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select user_id as unique_field
+  from `my-project-mail-422110`.`ecommerce_marts`.`customer_features`
+  where user_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:01:11.006293 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m00:01:12.496731 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:926f8191-246f-4e7a-aec3-10f6061a6e5d&page=queryresults
+[0m00:01:12.510680 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:eda9b111-15fc-4d73-b6fa-6543eb498d1b&page=queryresults
+[0m00:01:12.622267 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-mail-422110&j=bq:US:2f9c04e3-35f4-473f-ac20-d3cd09f91a9d&page=queryresults
+[0m00:01:12.642731 [debug] [Thread-2 (]: SQL status: OK in 0.153 seconds
+[0m00:01:12.705167 [debug] [Thread-1 (]: SQL status: OK in 0.196 seconds
+[0m00:01:12.822388 [debug] [Thread-3 (]: SQL status: OK in 0.193 seconds
+[0m00:01:13.012774 [info ] [Thread-2 (]: 7 of 7 PASS unique_customer_features_user_id ................................... [[32mPASS[0m in 2.11s]
+[0m00:01:13.012774 [debug] [Thread-2 (]: Finished running node test.dbt_project.unique_customer_features_user_id.1bddc8fff0
+[0m00:01:13.042539 [info ] [Thread-1 (]: 5 of 7 PASS not_null_stg_events_event_type ..................................... [[32mPASS[0m in 2.17s]
+[0m00:01:13.042539 [debug] [Thread-1 (]: Finished running node test.dbt_project.not_null_stg_events_event_type.ca8d147ba2
+[0m00:01:13.247491 [info ] [Thread-3 (]: 6 of 7 PASS not_null_stg_events_user_id ........................................ [[32mPASS[0m in 2.36s]
+[0m00:01:13.247491 [debug] [Thread-3 (]: Finished running node test.dbt_project.not_null_stg_events_user_id.63ec98fbc4
+[0m00:01:13.247491 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:01:13.288832 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:01:13.289750 [debug] [MainThread]: Connection 'list_my-project-mail-422110_ecommerce_marts' was properly closed.
+[0m00:01:13.289750 [debug] [MainThread]: Connection 'test.dbt_project.not_null_stg_events_event_type.ca8d147ba2' was properly closed.
+[0m00:01:13.289750 [debug] [MainThread]: Connection 'test.dbt_project.unique_customer_features_user_id.1bddc8fff0' was properly closed.
+[0m00:01:13.290837 [debug] [MainThread]: Connection 'test.dbt_project.not_null_stg_events_user_id.63ec98fbc4' was properly closed.
+[0m00:01:13.290837 [debug] [MainThread]: Connection 'test.dbt_project.not_null_stg_events_event_time.8dc5735367' was properly closed.
+[0m00:01:13.290837 [info ] [MainThread]: 
+[0m00:01:13.290837 [info ] [MainThread]: Finished running 7 data tests in 0 hours 0 minutes and 6.38 seconds (6.38s).
+[0m00:01:13.293355 [debug] [MainThread]: Command end result
+[0m00:01:13.317585 [debug] [MainThread]: Wrote artifact WritableManifest to C:\churn-intelligence-platform\dbt_project\target\manifest.json
+[0m00:01:13.322704 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\churn-intelligence-platform\dbt_project\target\semantic_manifest.json
+[0m00:01:13.322704 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\churn-intelligence-platform\dbt_project\target\run_results.json
+[0m00:01:13.322704 [info ] [MainThread]: 
+[0m00:01:13.322704 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:01:13.322704 [info ] [MainThread]: 
+[0m00:01:13.332514 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m00:01:13.332514 [debug] [MainThread]: Command `dbt test` succeeded at 00:01:13.332514 after 9.70 seconds
+[0m00:01:13.332514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002495D63FA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002495BAD27E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002497032E060>]}
+[0m00:01:13.332514 [debug] [MainThread]: Flushing usage events
+[0m00:01:13.921767 [debug] [MainThread]: An error was encountered while trying to flush usage events
