@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from google.cloud import bigquery
+from google.oauth2 import service_account
 
 # Page config
 st.set_page_config(
@@ -13,7 +14,10 @@ st.set_page_config(
 
 @st.cache_data(ttl=300)
 def load_data():
-    client = bigquery.Client()
+    credentials = service_account.Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"]
+    )
+    client = bigquery.Client(credentials=credentials, project=credentials.project_id)
     query = """
         SELECT *
         FROM `my-project-mail-422110.ecommerce_marts.churn_dashboard_view`
