@@ -1,4 +1,5 @@
 # Real-Time Customer Churn Intelligence Platform
+**Live Demo:** https://churn-intelligence-platform-project.streamlit.app
 
 An end-to-end data platform that streams e-commerce events through Kafka, transforms them in BigQuery via dbt, predicts customer churn with XGBoost, and generates plain-English explanations for each at-risk customer using Claude AI.
 
